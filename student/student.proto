@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package student;
+
+// The student service definition.
+service Student {
+    // Finds a student
+    rpc FindStudent (FindRequest) returns (FindResponse) {}
+    // Creates a student
+    rpc CreateStudent (CreateRequest) returns (CreateResponse) {}
+    // Get all students
+    rpc GetStudents (GetFilter) returns (stream Model) {}
+}
+
+// Student model
+message Model {
+    string id = 1;
+    string name = 2;
+}
+
+// The find request message containing the student's id.
+message FindRequest {
+    string id = 1;
+}
+
+// The find response message containing the name of the student.
+message FindResponse {
+    Model student = 1;
+}
+
+// The create request message containing the student's model.
+message CreateRequest {
+    Model student = 1;
+}
+
+// The create response message containing the status and message.
+message CreateResponse {
+    string id = 1;
+    bool success = 2;
+}
+
+message GetFilter {
+    string keyword = 1;
+}
