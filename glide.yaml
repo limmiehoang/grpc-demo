@@ -1,0 +1,9 @@
+package: github.com/limmiehoang/grpc-demo
+import:
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: google.golang.org/grpc
+  subpackages:
+  - codes
+  - status
