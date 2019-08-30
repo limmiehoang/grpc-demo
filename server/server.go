@@ -11,7 +11,7 @@ import (
 	"net"
 	"strings"
 
-	pb "github.com/limmiehoang/grpcdemo/student"
+	pb "github.com/limmiehoang/grpc-demo/student"
 )
 
 var (
