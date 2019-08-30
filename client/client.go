@@ -101,9 +101,4 @@ func main()  {
 	default:
 		log.Fatalf("Sorry, function %s doesn't exist.", *function)
 	}
-
-
-
-
-
 }
