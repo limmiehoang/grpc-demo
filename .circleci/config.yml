@@ -26,4 +26,4 @@ jobs:
       - run: go install github.com/Masterminds/glide
       - run: glide cc
       - run: glide update
-      - run: go run server/server.go
+      - run: go build server/server.go
