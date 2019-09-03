@@ -3,7 +3,9 @@ import:
 - package: github.com/golang/protobuf
   subpackages:
   - proto
-- package: google.golang.org/grpc
+- package: golang.org/x/net
+  version: dfe83d419c9403b40b19d08cdba2afec27b002f7
   subpackages:
-  - codes
-  - status
+  - context
+- package: google.golang.org/grpc
+  version: v1.4.0

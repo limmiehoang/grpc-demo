@@ -26,4 +26,5 @@ jobs:
       - run: go install github.com/Masterminds/glide
       - run: glide cc
       - run: glide update
-      - run: go build server/server.go
+      - run: cd server
+      - run: go build -v -o $GOPATH/bin/server
