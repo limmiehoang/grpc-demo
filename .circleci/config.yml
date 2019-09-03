@@ -27,4 +27,4 @@ jobs:
       - run: glide cc
       - run: glide update
       - run: cd server
-      - run: go build -v -o $GOPATH/bin/server
+      - run: go build -v -o $GOPATH/bin/server server/server.go
